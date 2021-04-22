@@ -1,0 +1,16 @@
+#DataSoure config
+spring:
+  datasource:
+    username: root
+    password: DYJ0129..
+    url: jdbc:mysql://localhost:3306/myblog?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+du:
+  jwt:
+    #encryption key
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+    #effective time   s
+    expire: 604800
+    header: Authorization
